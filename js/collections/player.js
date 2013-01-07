@@ -10,7 +10,7 @@ define([
 
     var Collection = Backbone.Collection.extend({
         model: playerM,
-        url: "/json.json"
+        url: "/player/json.json"
     });
 
     return Collection;
