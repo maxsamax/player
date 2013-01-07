@@ -1,0 +1,27 @@
+<div id="player" class="container pull-left">
+    <div>title</div>
+    <div id="progress">
+        <div class="progress">
+            <div class="bar" style="width: 20%;"></div>
+            <div class="bar bar-success" style="width: 35%;"></div>
+        </div>
+    </div>
+    <div id="controlls">
+        <button type="button" class="btn"><span class="icon-backward"></span></button>
+        <div id="buttonset" class="btn-group" data-toggle="buttons-radio">
+            <button type="button" class="btn btn-warning"><span class="icon-pause"></span></button>
+            <button type="button" class="btn btn-primary"><span class="icon-play"></span></button>
+            <button type="button" class="btn btn-danger"><span class="icon-stop"></span></button>
+        </div>
+        <button type="button" class="btn"><span class="icon-forward"></span></button>
+    </div>
+    <div id="volume">
+        <div class="progress">
+            <div class="bar" style="width: 20%;"></div>
+        </div>
+    </div>
+    <script>
+    $(".btn-group").button();
+    $('#myModal').modal();
+    </script>
+</div>
