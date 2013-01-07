@@ -1,13 +1,20 @@
 define([
     //libs
-    "backbone"
+    "backbone",
     //deps
+    "text!../tmpl/playlist.html"
 
-], function(Backbone){
+], function(Backbone, playlistT){
 
     var View = Backbone.View.extend({
         el: $("#container"),
-        events: {}
+        events: {},
+        template: _.template(playlistT),
+        render: function(){
+            var content = this.template(this.model.toJSON);
+            this.$el.append(content);
+            return this;
+        }
     })
 
     return View;

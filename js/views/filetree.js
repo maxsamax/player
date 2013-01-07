@@ -1,13 +1,20 @@
 define([
     //libs
-    "backbone"
+    "backbone",
     //deps
+    "text!../tmpl/filetree.html"
 
-], function(Backbone){
+], function(Backbone, filetreeT){
 
     var View = Backbone.View.extend({
         el: $("#container"),
-        events: {}
+        events: {},
+        template: _.template(filetreeT),
+        render: function(){
+            var content = this.template(this.model.toJSON);
+            this.$el.append(content);
+            return this;
+        }
     })
 
     return View;

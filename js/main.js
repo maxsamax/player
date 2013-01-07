@@ -6,4 +6,6 @@ requirejs([
     var player = new playerC;
 
     player.fetch();
+    $(".btn-group").button();
+    $('#myModal').modal();
 })
