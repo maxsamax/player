@@ -2,8 +2,8 @@ requirejs([
     "jquery",
     "backbone",
     "./collections/player"
-], function($){
-    var player = new Collection;
+], function($, Backbone, playerC){
+    var player = new playerC;
 
     player.fetch();
 })
