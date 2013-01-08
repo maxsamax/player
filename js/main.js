@@ -7,7 +7,7 @@ requirejs([
     "./views/filetree"
 ], function($, Backbone, playerC, playbarV, playlistV, filetreeV){
     var playerColl = new playerC;
-    player.fetch();
+    playerColl.fetch();
     
     var playbarView = new playbarV({
     	collection: playerColl
