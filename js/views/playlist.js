@@ -15,8 +15,8 @@ define([
         }, 
         template: _.template(playlistT),
         render: function(){
-            this.model = this.collection.models
-            var content = this.template(/*this.model.toJSON*/);
+            this.model = this.collection.models || {number: "1", description: "ololo", duration: "3.52"}
+            var content = this.template(this.model.toJSON);
             this.$el.append(content);
             return this;
         },
