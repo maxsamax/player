@@ -14,12 +14,12 @@ requirejs.config({
 
     shim: {
         "backbone": {
-            deps: ["jquery", "underscore"],
+            deps: ["jquery", "underscore", "bootstrap"],
             exports: "Backbone"
-        },
+        }/*,
         "jquery": {
             deps: ["bootstrap"],
             exports: "$"
-        }
+        }*/
     }
 });

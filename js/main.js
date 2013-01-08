@@ -1,5 +1,5 @@
 requirejs([
-    "jquery",
+//    "jquery",
     "backbone",
     "./collections/player"
 ], function($, Backbone, playerC){
