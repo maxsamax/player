@@ -13,7 +13,7 @@ define([
         },
         template: _.template(playbarT),
         render: function(){
-            var content = this.template(this.model.toJSON);
+            var content = this.template(/*this.model.toJSON*/);
             this.$el.append(content);
             return this;
         }
