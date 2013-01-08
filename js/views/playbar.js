@@ -5,8 +5,8 @@ define([
     "text!../tmpl/playbar.html"
 ], function(Backbone, playbarT){
 
-    var Playbar = Backbone.View.extend({
-        el: $("#container"),
+    var View = Backbone.View.extend({
+        $el: $("#container"),
         events: {},
         initialize: function() {
             this.render();
@@ -19,6 +19,6 @@ define([
         }
     })
 
-    return Playbar;
+    return View;
 
 });
