@@ -7,7 +7,7 @@ requirejs([
     "./views/filetree"
 ], function($, Backbone, playerC, playbarV, playlistV, filetreeV){
     var playerColl = new playerC;
-    playerColl.fetch();
+    
     
     var playbarView = new playbarV({
     	collection: playerColl
@@ -15,10 +15,10 @@ requirejs([
     var playlistView = new playlistV({
     	collection: playerColl
     });
-
+	
 //    $('#container').append(playbarView.render().el);
 
-    
+    playerColl.fetch();
 //    $(".btn-group").button();
 //    $('#myModal').modal();
 })
