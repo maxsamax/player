@@ -17,7 +17,8 @@ define([
             var content = this.template(this.model.toJSON);
             this.$el.append(content);
             return this;
-        }
+        },
+        model: this.collection.models
     })
 
     return View;

@@ -12,6 +12,9 @@ requirejs([
     var playbarView = new playbarV({
     	collection: playerColl
     });
+    var playlistView = new playlistV({
+    	collection: playerColl
+    });
 
 //    $('#container').append(playbarView.render().el);
 
