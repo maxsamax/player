@@ -10,12 +10,13 @@ define([
         el: "#container",
         events: {},
         initialize: function() {
-            this.collection.on('reset', this.render);
+            /*this.collection.on('reset', this.render);*/
+            this.render();
         }, 
         template: _.template(playlistT),
         render: function(){
             this.model = this.collection.models
-            var content = this.template(this.model.toJSON);
+            var content = this.template(/*this.model.toJSON*/);
             this.$el.append(content);
             return this;
         },
