@@ -7,7 +7,7 @@ define([
 ], function(Backbone, playlistT){
 
     var View = Backbone.View.extend({
-        el: $("#container"),
+        el: "#container",
         events: {},
         initialize: function() {
             this.render();

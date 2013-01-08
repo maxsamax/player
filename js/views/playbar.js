@@ -6,7 +6,7 @@ define([
 ], function(Backbone, playbarT){
 
     var View = Backbone.View.extend({
-        $el: $("#container"),
+        el: "#container",
         events: {},
         initialize: function() {
             this.render();

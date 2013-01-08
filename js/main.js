@@ -2,17 +2,20 @@ requirejs([
     "jquery",
     "backbone",
     "./collections/player",
-    "./views/playbar"
-], function($, Backbone, playerC, playbarV){
+    "../views/playbar",
+    "../views/playlist",
+    "../views/filetree"
+], function($, Backbone, playerC, playbarV, playlistV, filetreeV){
     var playerColl = new playerC;
-
+    player.fetch();
+    
     var playbarView = new playbarV({
     	collection: playerColl
     });
 
     $('#container').append(playbarView.render().el);
 
-    player.fetch();
+    
 //    $(".btn-group").button();
 //    $('#myModal').modal();
 })
