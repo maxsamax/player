@@ -7,7 +7,7 @@ requirejs([
     var playerColl = new playerC;
 
     var playbarView = new playbarV({
-    	collection: playerColl;
+    	collection: playerColl
     });
 
     $('#container').append(playbarView.render().el);
