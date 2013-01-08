@@ -14,11 +14,12 @@ define([
         }, 
         template: _.template(playlistT),
         render: function(){
+            this.model = this.collection.models
             var content = this.template(this.model.toJSON);
             this.$el.append(content);
             return this;
         },
-        model: this.collection.models
+        model: []
     })
 
     return View;
