@@ -1,9 +1,16 @@
 requirejs([
     "jquery",
     "backbone",
-    "./collections/player"
-], function($, Backbone, playerC){
-    var player = new playerC;
+    "./collections/player",
+    "./views/playbar"
+], function($, Backbone, playerC, playbarV){
+    var playerColl = new playerC;
+
+    var playbarView = new playbarV({
+    	collection: playerColl;
+    });
+
+    $('#container').append(playbarView.render().el);
 
     player.fetch();
 //    $(".btn-group").button();
