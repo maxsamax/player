@@ -9,6 +9,9 @@ define([
     var View = Backbone.View.extend({
         el: $("#container"),
         events: {},
+        initialize: function() {
+            this.render();
+        }, 
         template: _.template(playlistT),
         render: function(){
             var content = this.template(this.model.toJSON);
