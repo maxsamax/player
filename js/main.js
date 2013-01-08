@@ -2,9 +2,9 @@ requirejs([
     "jquery",
     "backbone",
     "./collections/player",
-    "../views/playbar",
-    "../views/playlist",
-    "../views/filetree"
+    "./views/playbar",
+    "./views/playlist",
+    "./views/filetree"
 ], function($, Backbone, playerC, playbarV, playlistV, filetreeV){
     var playerColl = new playerC;
     player.fetch();
