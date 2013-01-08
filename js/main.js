@@ -13,7 +13,7 @@ requirejs([
     	collection: playerColl
     });
 
-    $('#container').append(playbarView.render().el);
+//    $('#container').append(playbarView.render().el);
 
     
 //    $(".btn-group").button();
